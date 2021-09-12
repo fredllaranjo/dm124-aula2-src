@@ -15,6 +15,3 @@ mongoose.connect(MONGODB_URI)
       })
   })
   .catch();
-
-  req.session.destroy()
-	req.session.save(()=>{});

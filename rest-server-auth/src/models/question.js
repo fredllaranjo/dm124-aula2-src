@@ -15,6 +15,7 @@ const questionSchema = new Schema({
     },
     options: [{
         type: Object,
+        ref: 'Option',
         required: true
     }]    
 });

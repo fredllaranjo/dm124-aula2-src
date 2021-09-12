@@ -10,8 +10,8 @@ class QuestionsService {
         description: newQuestion.description,
         number: newQuestion.number
       }).then(question => {
-        if (newQuestion.options && newQuestion.options.array) {
-          newQuestion.options.array.forEach(option => {
+        if (newQuestion.options) {
+          newQuestion.options.forEach(option => {
             question.createOption({ //Métodos Mágicos
               option: option
             });
